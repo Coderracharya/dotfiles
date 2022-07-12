@@ -46,8 +46,8 @@ keys = [
     Key([mod], "r", lazy.spawncmd(),
         desc="Spawn a command using a prompt widget"),
     Key([mod], "d", lazy.spawn("rofi -show run -theme ~/.config/rofi/rofi.rasi"), desc="launch rofi"),
-    Key([mod, "control"], "s", lazy.spawn("tkscreenshot.sh"), desc="display screenshot panel"),
-    Key([mod, "control"], "p", lazy.spawn("powermenu.sh"), desc="display power panel"),
+    #Key([mod, "control"], "s", lazy.spawn("tkscreenshot.sh"), desc="display screenshot panel"),
+    #Key([mod, "control"], "p", lazy.spawn("powermenu.sh"), desc="display power panel"),
     #Key([mod], "c", lazy.spawn("code --disable-web-security"), desc="launch visual studio code"),
 ]
 

@@ -97,12 +97,12 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'preservim/nerdtree'
 
-  Plug 'morhetz/gruvbox'
+ " Plug 'morhetz/gruvbox' " uncomment or change this according to your need
 
 call plug#end()
 
 set background=dark
-colorscheme gruvbox
+" colorscheme gruvbox
 
 
 " }}}
@@ -127,17 +127,22 @@ inoremap jj <Esc>
 " Press the space bar to type the : character in command mode.
 nnoremap <space> :
 
-" Pressing the letter o will open a new line below the current one.
-" Exit insert mode after creating a new line above or below the current line.
-nnoremap o o<esc>
-nnoremap O O<esc>
-
 " Center the cursor vertically when moving to the next word during a search.
 nnoremap n nzz
 nnoremap N Nzz
 
 " Yank from cursor to the end of line.
 nnoremap Y y$
+
+" Automatically closing braces
+inoremap { {}<ESC>ha
+inoremap ( ()<ESC>ha
+inoremap [ []<ESC>ha
+inoremap " ""<ESC>ha
+inoremap ' ''<ESC>ha
+inoremap < <><ESC>ha
+inoremap ` ``<ESC>ha
+
 
 " Map the F5 key to run a Python script inside Vim.
 " We map F5 to a chain of commands here.
